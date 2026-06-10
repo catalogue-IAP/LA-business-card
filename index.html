@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carte IAP</title>
+
+<style>
+body{
+    margin:0;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#e8e8e8;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.card{
+    width:850px;
+    height:550px;
+    background:#f7f4ee;
+    padding:45px;
+    box-sizing:border-box;
+    display:grid;
+    grid-template-columns: 38% 62%;
+    grid-template-rows: 45% 55%;
+    border-radius:8px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.25);
+}
+
+.logo{
+    font-size:34px;
+    font-weight:bold;
+    color:#f26b21;
+    line-height:1;
+}
+
+.logo span{
+    display:block;
+    color:#222;
+    font-size:20px;
+    margin-top:8px;
+}
+
+.iap{
+    font-size:26px;
+    font-weight:bold;
+    margin-top:10px;
+}
+
+.name{
+    font-size:42px;
+    color:#333;
+    font-weight:300;
+}
+
+.position{
+    font-size:32px;
+    color:#333;
+    margin-top:15px;
+    line-height:1.2;
+}
+
+.address{
+    align-self:end;
+    font-size:30px;
+    color:#333;
+    line-height:1.25;
+}
+
+.contact{
+    align-self:end;
+    font-size:28px;
+    color:#333;
+    line-height:1.7;
+}
+
+.icon{
+    display:inline-block;
+    width:45px;
+    font-weight:bold;
+}
+
+a{
+    color:#333;
+    text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div>
+        <div class="logo">
+            SONATRACH
+            <span>sonatrach</span>
+        </div>
+        <div class="iap">IAP</div>
+    </div>
+
+    <div>
+        <div class="name">Amel LOUGHRAIEB</div>
+        <div class="position">
+            Senior officer in charge of<br>
+            partnership
+        </div>
+    </div>
+
+    <div class="address">
+        SONATRACH/Institut<br>
+        Algérien du Pétrole, IAP<br>
+        Avenue du 1er novembre<br>
+        Boumerdès 35000, Algérie<br>
+        https://sonatrach.com/
+    </div>
+
+    <div class="contact">
+        <div><span class="icon">☎</span> +213 (0) 24 79 57 00</div>
+        <div><span class="icon">●</span> +213 (0) 670 382 184</div>
+        <div><span class="icon">▣</span> +213 (0) 24 79 57 21</div>
+        <div><span class="icon">✉</span> amel.loughraieb@sonatrach.dz</div>
+    </div>
+
+</div>
+
+</body>
+</html>
