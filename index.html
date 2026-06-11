@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@
 
 body{
     background:#e5e5e5;
-    font-family:'Segoe UI',sans-serif;
+    font-family:'Segoe UI', Arial, sans-serif;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -27,33 +28,36 @@ body{
     height:680px;
     background:#faf8f3;
     padding:70px;
-    border-radius:6px;
+    border-radius:8px;
     box-shadow:0 10px 30px rgba(0,0,0,0.20);
 
     display:grid;
-    grid-template-columns: 45% 55%;
-    grid-template-rows: 55% 45%;
+    grid-template-columns:40% 60%;
+    grid-template-rows:55% 45%;
 }
 
 .logo-block{
     display:flex;
     align-items:flex-start;
+    padding-left:20px;
 }
 
 .logo-block img{
-    width:320px;
+    width:160px;
     height:auto;
+    object-fit:contain;
+    margin-top:10px;
 }
 
 .identity{
-    padding-left:80px;
-    padding-top:10px;
+    padding-left:60px;
+    padding-top:20px;
 }
 
 .name{
-    font-size:54px;
-    font-weight:300;
+    font-size:56px;
     color:#222;
+    font-weight:300;
     margin-bottom:20px;
 }
 
@@ -72,6 +76,7 @@ body{
     font-size:28px;
     color:#333;
     line-height:1.35;
+    padding-left:20px;
 }
 
 .website{
@@ -82,7 +87,7 @@ body{
 
 .contact{
     align-self:end;
-    padding-left:80px;
+    padding-left:60px;
 }
 
 .contact-item{
@@ -94,7 +99,7 @@ body{
 }
 
 .icon{
-    width:50px;
+    width:55px;
     text-align:center;
     margin-right:25px;
     font-size:30px;
@@ -116,7 +121,20 @@ body{
 }
 
 .logo-block img{
-    width:220px;
+    width:140px;
+}
+
+.name{
+    font-size:40px;
+}
+
+.position{
+    font-size:24px;
+}
+
+.address,
+.contact-item{
+    font-size:20px;
 }
 
 }
@@ -147,8 +165,8 @@ body{
 
     <div class="address">
 
-        SONATRACH/Institut<br>
-        Algérien du Pétrole, IAP<br>
+        SONATRACH / Institut<br>
+        Algérien du Pétrole (IAP)<br>
         Avenue du 1er Novembre<br>
         Boumerdès 35000, Algérie
 
@@ -186,3 +204,4 @@ body{
 
 </body>
 </html>
+```
