@@ -6,20 +6,18 @@
 <title>IAP Business Card</title>
 
 <style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+*{margin:0;padding:0;box-sizing:border-box;}
 
 body{
     background:#e5e5e5;
     font-family:'Segoe UI', Arial, sans-serif;
     min-height:100vh;
     display:flex;
+    flex-direction:column;
     justify-content:center;
     align-items:center;
     padding:20px;
+    gap:25px;
 }
 
 .card{
@@ -52,11 +50,10 @@ body{
     color:#222;
     font-weight:300;
     margin-bottom:10px;
+    white-space:nowrap;
 }
 
-.name strong{
-    font-weight:700;
-}
+.name strong{font-weight:700;}
 
 .position{
     font-size:clamp(12px, 2.5vw, 26px);
@@ -89,44 +86,38 @@ body{
     color:#222;
 }
 
+.icon{
+    width:28px;
+    margin-right:8px;
+    text-align:center;
+}
+
 .actions{
-    width:min(95vw,850px);
     display:flex;
     justify-content:center;
-    gap:18px;
-    margin-top:5px;
+    gap:15px;
+    flex-wrap:wrap;
 }
 
 .contact-btn,
 .site-btn{
-    flex:1;
-    max-width:280px;
-    height:55px;
-    display:flex;
-    justify-content:center;
+    display:inline-flex;
     align-items:center;
-    border-radius:12px;
-    text-decoration:none;
+    justify-content:center;
+    padding:14px 28px;
     color:#fff;
-    font-size:18px;
+    text-decoration:none;
     font-weight:600;
-    box-shadow:0 4px 10px rgba(0,0,0,.15);
-    transition:all .25s ease;
+    border-radius:8px;
+    font-size:18px;
+    transition:.3s;
 }
 
-.contact-btn{
-    background:#f26b21;
-}
+.contact-btn{background:#f26b21;}
+.contact-btn:hover{background:#d95d18;}
 
-.site-btn{
-    background:#0d2b63;
-}
-
-.contact-btn:hover,
-.site-btn:hover{
-    transform:translateY(-2px);
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
-}
+.site-btn{background:#0d2b63;}
+.site-btn:hover{background:#081d46;}
 </style>
 </head>
 
