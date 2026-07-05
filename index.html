@@ -89,36 +89,44 @@ body{
     color:#222;
 }
 
-.icon{
-    width:28px;
-    margin-right:8px;
-    text-align:center;
-}
 .actions{
+    width:min(95vw,850px);
     display:flex;
     justify-content:center;
-    gap:15px;
-    flex-wrap:wrap;
+    gap:18px;
+    margin-top:5px;
 }
+
 .contact-btn,
 .site-btn{
-    display:inline-flex;
-    align-items:center;
+    flex:1;
+    max-width:280px;
+    height:55px;
+    display:flex;
     justify-content:center;
-    padding:14px 28px;
-    color:#fff;
+    align-items:center;
+    border-radius:12px;
     text-decoration:none;
-    font-weight:600;
-    border-radius:8px;
+    color:#fff;
     font-size:18px;
-    transition:.3s;
+    font-weight:600;
+    box-shadow:0 4px 10px rgba(0,0,0,.15);
+    transition:all .25s ease;
 }
 
-.contact-btn{background:#f26b21;}
-.contact-btn:hover{background:#d95d18;}
+.contact-btn{
+    background:#f26b21;
+}
 
-.site-btn{background:#0d2b63;}
-.site-btn:hover{background:#081d46;}
+.site-btn{
+    background:#0d2b63;
+}
+
+.contact-btn:hover,
+.site-btn:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,.2);
+}
 </style>
 </head>
 
